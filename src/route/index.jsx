@@ -2,6 +2,8 @@ import { createHashRouter, Navigate, RouterProvider } from 'react-router'
 import Home from '../view/display/home'
 import Detail from '../view/display/detail'
 import Reader from '../view/display/reader'
+import Login from '../view/auth/login'
+import AdminDashboard from '../view/admin/dashboard'
 
 const router = createHashRouter([
     {
@@ -15,6 +17,14 @@ const router = createHashRouter([
     {
         path: '/reader/:comicId/:pageIndex',
         element: <Reader />
+    },
+    {
+        path: '/login',
+        element: <Login />
+    },
+    {
+        path: '/admin',
+        element: <AdminDashboard />
     },
     {
         path: '*',
