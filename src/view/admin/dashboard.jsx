@@ -282,7 +282,7 @@ export default function AdminDashboard() {
                     <p className="hint">使用 Ant Design 表格即可完成增删改查，刷新后数据会回到示例状态。</p>
                 </div>
                 <div className="admin-toolbar">
-                    <Button onClick={() => navigate('/login')}>返回登录</Button>
+                    <Button className='mr-5' onClick={() => navigate('/login')}>返回登录</Button>
                     <Button type="primary" onClick={openCreate}>
                         新建漫画
                     </Button>
